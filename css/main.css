@@ -1,0 +1,313 @@
+@charset "UTF-8";
+html,
+body {
+  font-family: "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ Pro W3", "YuGothic", "游ゴシック体", "メイリオ", Meiryo, sans-serif; }
+  @media (min-width: 969px) {
+    html,
+    body {
+      font-size: 10px; } }
+
+img {
+  max-width: 100%;
+  height: auto; }
+
+a {
+  text-decoration: none; }
+  a:hover {
+    text-decoration: none; }
+
+input:focus,
+select:focus,
+button:focus {
+  outline: none; }
+
+.hero {
+  position: relative; }
+  .hero img {
+    width: 100%; }
+    .hero img.pc {
+      display: none; }
+      @media (min-width: 969px) {
+        .hero img.pc {
+          display: block; } }
+    @media (min-width: 969px) {
+      .hero img.sp {
+        display: none; } }
+
+.np-btn {
+  text-decoration: none;
+  text-align: center;
+  border: 0;
+  color: #fff;
+  position: relative;
+  border-radius: 10vw;
+  font-weight: 600;
+  transition: background .25s;
+  cursor: pointer; }
+  .np-btn.red {
+    background: #C8161E;
+    font-size: 3.067vw;
+    line-height: 3.067vw;
+    padding: 1.6vw 4vw;
+    max-width: 38vw; }
+    .np-btn.red:hover {
+      background: #8a090f; }
+    @media (min-width: 969px) {
+      .np-btn.red {
+        font-size: 2.5rem;
+        line-height: 2rem;
+        padding: 1.7rem 3.8rem;
+        max-width: 45rem; } }
+    @media (min-width: 992px) {
+      .np-btn.red {
+        font-size: 3.6rem;
+        line-height: 3.6rem; } }
+  .np-btn.dark {
+    width: 100%;
+    margin: 0 auto 4.667vw;
+    display: block;
+    background: #000;
+    padding: 3.333vw 0;
+    font-size: 4vw;
+    max-width: 81.333vw;
+    transition: opacity .25s;
+    box-shadow: 0 0 0.667vw 0.667vw rgba(0, 0, 0, 0.25); }
+    .np-btn.dark:hover {
+      opacity: .8; }
+    @media (min-width: 969px) {
+      .np-btn.dark {
+        padding: 2.5rem 0;
+        font-size: 3rem;
+        max-width: 62rem;
+        margin: 0 auto 5rem;
+        box-shadow: 0 0 0.5rem 0.5rem rgba(0, 0, 0, 0.25); } }
+
+.intro {
+  color: #fff;
+  padding: 2.267vw;
+  background: #382d0d;
+  font-size: 8vw;
+  font-weight: 600;
+  margin-bottom: 2.933vw;
+  line-height: 8vw; }
+  @media (min-width: 969px) {
+    .intro {
+      line-height: 7.2rem; } }
+  .intro.on-date {
+    font-size: 4.481vw;
+    line-height: 4.481vw; }
+    @media (min-width: 969px) {
+      .intro.on-date {
+        font-size: 4.4rem;
+        line-height: 4.4rem; } }
+    .intro.on-date .c-yelow {
+      color: #f1ca52; }
+    .intro.on-date .t-small {
+      font-size: 2.988vw;
+      line-height: 2.988vw; }
+      @media (min-width: 969px) {
+        .intro.on-date .t-small {
+          font-size: 2.944rem;
+          line-height: 2.944rem; } }
+  @media (min-width: 969px) {
+    .intro {
+      font-size: 7.2rem;
+      padding: 1.7rem;
+      margin-bottom: 2rem; } }
+  .intro.intro-2 {
+    padding: 2vw 1vw; }
+    @media (min-width: 969px) {
+      .intro.intro-2 {
+        padding: 2.5rem 1.5rem; } }
+    @media (min-width: 1024px) {
+      .intro.intro-2 {
+        padding: 2.5rem 1.5rem; } }
+    @media (min-width: 1500px) {
+      .intro.intro-2 {
+        padding: 2.5rem 1.5rem; } }
+    .intro.intro-2 .row {
+      margin-bottom: 1.333vw;
+      flex-wrap: nowrap;
+      justify-content: center;
+      align-items: center; }
+      @media (min-width: 969px) {
+        .intro.intro-2 .row {
+          margin-bottom: 1rem; } }
+      .intro.intro-2 .row:last-child {
+        margin-bottom: 0; }
+    .intro.intro-2 .content {
+      font-size: 2.859vw;
+      line-height: 2.850vw;
+      flex: 0 0 50%; }
+      @media (min-width: 969px) {
+        .intro.intro-2 .content {
+          font-size: 2rem;
+          line-height: 2rem; } }
+      @media (min-width: 992px) {
+        .intro.intro-2 .content {
+          font-size: 2.6rem;
+          line-height: 2.6rem; } }
+      @media (min-width: 1200px) {
+        .intro.intro-2 .content {
+          font-size: 3.6rem;
+          line-height: 3.6rem; } }
+      .intro.intro-2 .content.left {
+        color: #C8161E;
+        margin-right: 2.667vw;
+        text-align: right;
+        flex: 0 0 43%; }
+        @media (min-width: 969px) {
+          .intro.intro-2 .content.left {
+            margin-right: 2rem;
+            flex: 0 0 44%; } }
+        @media (min-width: 992px) {
+          .intro.intro-2 .content.left {
+            margin-right: 4rem; } }
+      .intro.intro-2 .content.right {
+        flex: 0 0 calc(58% - 2rem); }
+        @media (min-width: 992px) {
+          .intro.intro-2 .content.right {
+            flex: 0 0 calc(56% - 4rem); } }
+        @media (max-width: 750px) {
+          .intro.intro-2 .content.right {
+            font-size: 2.859vw; } }
+        .intro.intro-2 .content.right span {
+          font-size: 1.705vw; }
+          @media (min-width: 969px) {
+            .intro.intro-2 .content.right span {
+              font-size: 2.4rem; } }
+
+.content-page {
+  display: flex;
+  margin: 0;
+  flex-direction: column;
+  padding: 0 5.333vw; }
+  @media (min-width: 969px) {
+    .content-page {
+      flex-direction: row;
+      padding: 0 15px;
+      margin: 0 0 5rem;
+      justify-content: center; } }
+  @media (min-width: 1100px) {
+    .content-page {
+      padding: 0; } }
+  .content-page img {
+    max-width: 100%; }
+  .content-page .left-content-page {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    @media (min-width: 969px) {
+      .content-page .left-content-page {
+        max-width: 365px; } }
+    .content-page .left-content-page img {
+      width: 31.200vw; }
+      @media (min-width: 969px) {
+        .content-page .left-content-page img {
+          width: auto; } }
+    .content-page .left-content-page span {
+      background-color: #c8161e;
+      color: #ffffff;
+      padding: 0.933vw 3.067vw;
+      border-radius: 4vw;
+      font-size: 1.808vw;
+      line-height: 1.808vw;
+      font-weight: bold;
+      margin: 0.2vw 0 2.800vw 0; }
+      @media (min-width: 969px) {
+        .content-page .left-content-page span {
+          font-size: 2.1rem;
+          line-height: 2.1rem;
+          padding: 11px 30px;
+          border-radius: 30px;
+          margin: 20px 0 0 0; } }
+  .content-page .right-content-page {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; }
+    @media (min-width: 969px) {
+      .content-page .right-content-page {
+        max-width: 685px;
+        margin: 0 0 0 3rem; } }
+
+.line-btn {
+  width: 100%;
+  max-width: 89.333vw;
+  margin: 0 auto 4vw;
+  display: block;
+  border: 0;
+  transition: opacity .25s;
+  padding: 0; }
+  .line-btn:hover {
+    opacity: .8; }
+  @media (min-width: 969px) {
+    .line-btn {
+      max-width: 60rem;
+      margin: 0 auto 3.3rem; } }
+  @media (min-width: 992px) {
+    .line-btn {
+      max-width: 93rem; } }
+  .line-btn img {
+    width: 100%; }
+    .line-btn img.pc {
+      display: none; }
+      @media (min-width: 969px) {
+        .line-btn img.pc {
+          display: block; } }
+    .line-btn img.sp {
+      display: block; }
+      @media (min-width: 969px) {
+        .line-btn img.sp {
+          display: none; } }
+
+.call-to-action {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  font-weight: 600;
+  font-size: 3.200vw;
+  margin-bottom: 5.333vw; }
+  @media (min-width: 969px) {
+    .call-to-action {
+      font-size: 1.8rem;
+      margin-bottom: 0; } }
+  .call-to-action p {
+    font-size: 3.200vw;
+    margin-bottom: 0.733vw;
+    text-align: center; }
+    @media (min-width: 969px) {
+      .call-to-action p {
+        font-size: 2.4rem;
+        margin-bottom: 0;
+        text-align: left; } }
+  .call-to-action button {
+    width: 100%;
+    background-color: transparent;
+    border: 0;
+    padding: 0;
+    font-size: 3.2vw;
+    font-weight: 700;
+    line-height: 3.2vw;
+    transition: background .25s, color .25s; }
+    .call-to-action button:hover {
+      opacity: 0.8; }
+    .call-to-action button img {
+      width: 100%; }
+
+.btn-icon {
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%);
+  right: 3rem;
+  background: url(../images/icon.png) no-repeat center;
+  background-size: contain;
+  width: 1.867vw;
+  height: 3.333vw; }
+  @media (min-width: 969px) {
+    .btn-icon {
+      width: 1.4rem;
+      height: 2.5rem; } }
+
+/*# sourceMappingURL=main.css.map */
